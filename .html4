@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usability Testing & Analysis</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:30px 0;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th, table td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:left;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+}
+
+.user-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.user-card{
+    background:#eef4ff;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.user-card img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    margin-bottom:10px;
+}
+
+.feedback-box{
+    background:#f8fafc;
+    border-left:5px solid #2563eb;
+    padding:15px;
+    margin:10px 0;
+}
+
+.metric{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.metric-card{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-radius:12px;
+}
+
+.metric-card h3{
+    font-size:32px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.result{
+    margin-top:15px;
+    font-weight:bold;
+    color:green;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Usability Testing & Analysis</h1>
+    <p>Testing User Experience and Improving Product Design</p>
+</header>
+
+<div class="container">
+
+    <!-- Test Plan -->
+    <div class="card">
+        <h2>Usability Test Plan</h2>
+
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Objective</th>
+            </tr>
+
+            <tr>
+                <td>Login</td>
+                <td>Check ease of authentication process</td>
+            </tr>
+
+            <tr>
+                <td>Search Product</td>
+                <td>Measure navigation efficiency</td>
+            </tr>
+
+            <tr>
+                <td>Add to Cart</td>
+                <td>Evaluate purchasing workflow</td>
+            </tr>
+
+            <tr>
+                <td>Checkout</td>
+                <td>Assess task completion success</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Sample Users -->
+    <div class="card">
+        <h2>Sample Participants</h2>
+
+        <div class="user-grid">
+
+            <div class="user-card">
+                <img src="https://picsum.photos/100?1">
+                <h4>User 1</h4>
+                <p>College Student</p>
+            </div>
+
+            <div class="user-card">
+                <img src="https://picsum.photos/100?2">
+                <h4>User 2</h4>
+                <p>Working Professional</p>
+            </div>
+
+            <div class="user-card">
+                <img src="https://picsum.photos/100?3">
+                <h4>User 3</h4>
+                <p>Online Shopper</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Feedback -->
+    <div class="card">
+        <h2>User Feedback</h2>
+
+        <div class="feedback-box">
+            Navigation was simple and easy to understand.
+        </div>
+
+        <div class="feedback-box">
+            Search feature responded quickly.
+        </div>
+
+        <div class="feedback-box">
+            Checkout process required fewer clicks.
+        </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="card">
+        <h2>Usability Metrics</h2>
+
+        <div class="metric">
+
+            <div class="metric-card">
+                <h3>92%</h3>
+                <p>Task Success Rate</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>4.5/5</h3>
+                <p>User Satisfaction</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>2.1 min</h3>
+                <p>Average Task Time</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>8%</h3>
+                <p>Error Rate</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Findings -->
+    <div class="card">
+        <h2>Findings & Recommendations</h2>
+
+        <ul>
+            <li>Improve visibility of navigation menu.</li>
+            <li>Increase button size for mobile users.</li>
+            <li>Simplify checkout process.</li>
+            <li>Add onboarding tutorial for new users.</li>
+            <li>Improve accessibility and color contrast.</li>
+        </ul>
+
+        <button onclick="showResult()">
+            Generate Final Analysis
+        </button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+</div>
+
+<script>
+function showResult(){
+document.getElementById("result").innerHTML =
+"Analysis Complete ✔️ Overall usability score: 89/100. User satisfaction is high, but navigation and accessibility improvements are recommended.";
+}
+</script>
+
+</body>
+</html>
