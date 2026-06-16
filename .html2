@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile App Wireframe</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.phone{
+    width:320px;
+    height:650px;
+    background:#fff;
+    border:8px solid #333;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.header{
+    height:70px;
+    background:#ddd;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-size:20px;
+}
+
+.search{
+    padding:15px;
+}
+
+.search-box{
+    height:40px;
+    background:#e5e5e5;
+    border-radius:8px;
+}
+
+.banner{
+    height:120px;
+    margin:0 15px;
+    background:#d0d0d0;
+    border-radius:10px;
+}
+
+.section-title{
+    margin:20px 15px 10px;
+    font-weight:bold;
+}
+
+.cards{
+    display:flex;
+    gap:10px;
+    padding:0 15px;
+}
+
+.card{
+    flex:1;
+    height:90px;
+    background:#e0e0e0;
+    border-radius:10px;
+}
+
+.menu{
+    position:absolute;
+    bottom:0;
+    width:304px;
+    background:#ddd;
+    display:flex;
+    justify-content:space-around;
+    padding:15px 0;
+}
+
+.menu div{
+    width:40px;
+    height:40px;
+    background:#bbb;
+    border-radius:50%;
+}
+</style>
+
+</head>
+<body>
+
+<div class="phone">
+
+    <div class="header">
+        App Logo
+    </div>
+
+    <div class="search">
+        <div class="search-box"></div>
+    </div>
+
+    <div class="banner"></div>
+
+    <div class="section-title">
+        Featured Items
+    </div>
+
+    <div class="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+    <div class="section-title">
+        Categories
+    </div>
+
+    <div class="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+    <div class="menu">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+</div>
+
+</body>
+</html>
